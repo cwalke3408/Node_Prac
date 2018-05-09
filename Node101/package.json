@@ -1,0 +1,11 @@
+{
+  "name": "node101",
+  "version": "1.0.0",
+  "description": "First node app in Syntel training",
+  "main": "Node101.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christian Walker",
+  "license": "ISC"
+}
