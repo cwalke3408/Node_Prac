@@ -32,10 +32,15 @@ const server = http.createServer((req, res) => {
         // 1. status code 
         // 2. mimi-type of whatever is being sent back
         res.writeHead(200, {"content-type" : `text/plain`});
-        res.writeHead(200, {"content-type" : `text/html`});
+       // res.writeHead(200, {"content-type" : `text/html`});
         res.write(`<h1>Server responding </h1>`);
 
         // Will tell the browser We'll done
+        res.end();
+    } else{
+        res.writeHead(404, {"content-type" : `text/plain`});
+        //res.writeHead(200, {"content-type" : `text/html`});
+        res.write(`<h1>Requested page not found! </h1>`);
         res.end();
     }
 });
