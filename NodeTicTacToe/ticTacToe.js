@@ -33,6 +33,12 @@ function markSquare(squareID){
         (whosTurn === "X") ? whosTurn="0" : whosTurn="X";
 }
 
+
+//Board
+// [0,0][0,1][0,2]
+// [1,0][1,1][1,2]
+// [2,0][2,1][2,2]
+
 // col row
 function winner(id){
 
