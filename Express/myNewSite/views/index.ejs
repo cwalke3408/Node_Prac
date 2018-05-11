@@ -1,0 +1,11 @@
+<html>
+  <head></head>
+  <body>
+    <h1> <%= team.name %> </h1>
+    <ul>
+    <% team.lineup.forEach((GOAT) => { %>
+      <li><%=team.nickname%>: <%= GOAT %> </li>
+    <% }) %>
+    </ul>
+  </body>
+</html>
