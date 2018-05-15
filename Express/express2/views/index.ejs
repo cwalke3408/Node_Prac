@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>The Crew</h1>
+    <table border=1 id="my-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% theBand.forEach((member)=>{ %>
+          <tr>
+            <td><%=member%></td>
+          </tr>
+        <% }) %>
+    </body>
+</html>

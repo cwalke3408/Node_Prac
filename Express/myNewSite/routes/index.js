@@ -1,4 +1,5 @@
 var express = require('express');
+// var weather = require('weather');
 var router = express.Router();
 
 /* GET home page. */
@@ -52,5 +53,12 @@ router.get('/bums', function(req, res){
   };
   res.render('index', team);
 });
+
+router.get('/weather', function (req, res) {
+  res.render('weather');
+});
+
+express.static('public');
+
 
 module.exports = router;
